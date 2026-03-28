@@ -1,0 +1,14 @@
+.projectshowroom {
+  padding: 80px 20px;
+}
+
+.projectshowroom h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

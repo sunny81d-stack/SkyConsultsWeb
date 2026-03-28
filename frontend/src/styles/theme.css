@@ -1,0 +1,39 @@
+:root {
+  --primary-blue: #0066cc;
+  --secondary-blue: #0052a3;
+  --silver: #c0c0c0;
+  --dark-silver: #a9a9a9;
+  --light-silver: #e8e8e8;
+  --dark-bg: #1a1a1a;
+  --text-dark: #2c2c2c;
+  --text-light: #ffffff;
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, var(--silver) 0%, var(--dark-silver) 100%);
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  color: white;
+  border: 2px solid var(--silver);
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--secondary-blue);
+  border-color: var(--light-silver);
+  transform: translateY(-2px);
+}
+
+.accent-silver {
+  color: var(--silver);
+}
+
+.accent-blue {
+  color: var(--primary-blue);
+}

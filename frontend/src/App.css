@@ -1,1 +1,49 @@
-.App { display: flex; flex-direction: column; min-height: 100vh; }
+:root {
+  --primary-blue: #0066cc;
+  --secondary-blue: #0052a3;
+  --silver: #c0c0c0;
+  --dark-silver: #a9a9a9;
+  --light-silver: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #ffffff;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
