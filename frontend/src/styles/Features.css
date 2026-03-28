@@ -1,0 +1,7 @@
+.features { padding: 60px 20px; background: #f9f9f9; }
+.features-container { max-width: 1200px; margin: 0 auto; }
+.features h2 { text-align: center; font-size: 36px; margin-bottom: 50px; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.feature-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+.feature-card:hover { transform: translateY(-5px); }
+.feature-icon { font-size: 48px; margin-bottom: 15px; }
