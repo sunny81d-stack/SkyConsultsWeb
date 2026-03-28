@@ -1,0 +1,8 @@
+|-- src
+|   |-- components
+|   |-- pages
+|   |-- App.js
+|   |-- index.js
+|-- public
+|   |-- index.html
+|-- package.json
