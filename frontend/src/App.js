@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+// Added the Router import from react-router-dom
+import { BrowserRouter as Router } from 'react-router-dom'; 
+
 import './styles/theme.css';
 import './App.css';
 import Header from './components/Header';
@@ -23,25 +26,27 @@ function App() {
   const [showAccessModal, setShowAccessModal] = useState(false);
 
   return (
-    <div className="App">
-      <ContactSidebar />
-      <Header onAccessClick={() => setShowAccessModal(true)} />
-      <HeroSection />
-      <InflationCalculator />
-      <Features />
-      <ShowcaseProjects />
-      <InteriorCalculator />
-      <VastuCompliance />
-      <SpacePlanning />
-      <CustomDesignSteps />
-      <ProjectShowroom />
-      <ProjectStatus />
-      <RealEstatePage />
-      <ContactForm />
-      <RERADisclaimer />
-      <Footer />
-      <AccessCodeModal isOpen={showAccessModal} onClose={() => setShowAccessModal(false)} />
-    </div>
+    <Router>
+      <div className="App">
+        <ContactSidebar />
+        <Header onAccessClick={() => setShowAccessModal(true)} />
+        <HeroSection />
+        <InflationCalculator />
+        <Features />
+        <ShowcaseProjects />
+        <InteriorCalculator />
+        <VastuCompliance />
+        <SpacePlanning />
+        <CustomDesignSteps />
+        <ProjectShowroom />
+        <ProjectStatus />
+        <RealEstatePage />
+        <ContactForm />
+        <RERADisclaimer />
+        <Footer />
+        <AccessCodeModal isOpen={showAccessModal} onClose={() => setShowAccessModal(false)} />
+      </div>
+    </Router>
   );
 }
 
